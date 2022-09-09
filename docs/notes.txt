@@ -1,0 +1,4 @@
+Na primeira execução um erro de build no android
+https://stackoverflow.com/questions/68931751/could-not-determine-the-dependencies-of-task-appcompiledebugjavawithjavac-h
+Conforme essa discução alterei em android\build.gradle -> buildToolsVersion = "30.0.0"
+
