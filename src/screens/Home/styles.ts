@@ -9,6 +9,18 @@ export const Wrapper = styled.View`
 
 export const Title = styled.Text`
   color: ${({ theme }) => theme.colors.text};
-  font-weight: 500;
-  font-size: 30px;
+  font-family: ${({ theme }) => theme.fonts.bold};
+  font-size: 32px;
+`
+
+export const Subtitle = styled.Text`
+  color: ${({ theme }) => theme.colors.text};
+  font-family: ${({ theme }) => theme.fonts.medium};
+  font-size: 24px;
+`
+
+export const Paragraph = styled.Text`
+  color: ${({ theme }) => theme.colors.text};
+  font-family: ${({ theme }) => theme.fonts.light};
+  font-size: 16px;
 `

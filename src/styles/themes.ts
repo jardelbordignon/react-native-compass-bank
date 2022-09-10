@@ -11,18 +11,19 @@ export type ThemeType = {
     gray: string
   }
   fonts: {
-    regular: string
+    light: string
     medium: string
     bold: string
   }
 }
 
 export type ThemeColorKeys = keyof ThemeType['colors']
+export type ThemeFontKeys = keyof ThemeType['fonts']
 
 const fonts = {
-  regular: 'Poppins-Regular',
-  medium: 'Poppins-Medium',
-  bold: 'Poppins-Bold',
+  light: 'Roboto-Ligth',
+  medium: 'Roboto-Medium',
+  bold: 'Roboto-Bold',
 }
 
 const commonColors = {
