@@ -1,4 +1,4 @@
-// import 'styled-components/native'
+import 'styled-components/native'
 import { ThemeType } from '../styles/themes'
 
 declare module 'styled-components/native' {

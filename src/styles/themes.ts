@@ -5,8 +5,9 @@ export type ThemeType = {
     success: string
     error: string
 
-    text: string
     background: string
+    base: string
+    text: string
     highlight: string
     gray: string
   }
@@ -33,19 +34,21 @@ const commonColors = {
   error: 'rgb(211, 47, 47)',
 
   highlight: '#00C1AF',
-  gray: '#828282',
+  gray: '#BDBDBD',
 }
 
 const lightColors: ThemeType['colors'] = {
   ...commonColors,
-  text: '#202021',
   background: '#F8F8F8',
+  base: '#FFFFFF',
+  text: '#202021',
 }
 
 const darkColors: ThemeType['colors'] = {
   ...commonColors,
-  text: '#F8F8F8',
   background: '#202021',
+  base: '#111111',
+  text: '#F8F8F8',
 }
 
 const light = {

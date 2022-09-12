@@ -1,9 +1,9 @@
 import React from 'react'
 import { useColorScheme } from 'react-native'
+import { GestureHandlerRootView } from 'react-native-gesture-handler'
 import { ThemeProvider } from 'styled-components/native'
 
-import { Home } from 'src/screens/Home'
-
+import { Statement } from './screens/Statement'
 import themes from './styles/themes'
 
 export function App() {
@@ -11,7 +11,9 @@ export function App() {
 
   return (
     <ThemeProvider theme={themes[theme]}>
-      <Home />
+      <GestureHandlerRootView style={{ flex: 1 }}>
+        <Statement />
+      </GestureHandlerRootView>
     </ThemeProvider>
   )
 }
